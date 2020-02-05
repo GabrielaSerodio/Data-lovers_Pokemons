@@ -53,5 +53,5 @@ divFilter.addEventListener("change", (e) => {
 });
 
 inputFilterName.addEventListener("input", (e) => {
-  showCards(filterSearch(dataPoke, e.target.value, "name")); 
+  showCards(filterSearch(dataPoke, inputFilterName.value.charAt(0).toUpperCase() + inputFilterName.value.slice(1), "name")); 
 });
